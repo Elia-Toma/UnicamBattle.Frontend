@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# UnicamBattle Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**UnicamBattle Frontend** è l'interfaccia utente dell'applicazione **UnicamBattle**.
 
-Currently, two official plugins are available:
+## 🚀 Caratteristiche
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interfaccia responsiva**: Ottimizzata per desktop e dispositivi mobili.
+- **Esperienza utente moderna**: Realizzata seguendo lo stile "brutalist" per un design unico.
+- **Integrazione API**: Comunicazione con il backend per ottenere dati sui personaggi e sulle loro mosse.
+- **Tecnologie avanzate**: Sviluppata con React e TypeScript.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologie Utilizzate
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Framework**: React (con Vite)
+- **Linguaggio**: TypeScript
+- **Stili**: TailwindCSS con tema custom Brutal
+- **Gestione stato**: React Context
+- **Internazionalizzazione**: Configurata con react-i18next
 
-- Configure the top-level `parserOptions` property like this:
+## 📂 Struttura della Repository
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- `src/`: Codice sorgente del frontend.
+  - `components/`: Componenti riutilizzabili (es. card, pulsanti).
+  - `pages/`: Pagine principali dell'app (es. Home, Personaggi).
+  - `styles/`: Stili globali.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## ⚙️ Setup del Progetto
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Requisiti
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- Node.js
+- Gestore pacchetti (npm)
+
+## 🖌️ Stile Brutalist
+
+Il frontend segue il **tema brutalist**:
+
+- **Colori vividi**: Combinazioni di nero, bianco e accenti semplici.
+- **Bordi arrotondati**: Per un tocco moderno.
+- **Ombre evidenti**: Per risaltare gli elementi sull'interfaccia.
