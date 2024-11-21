@@ -1,0 +1,88 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  color: #333;
+  /* Testo che risalta rispetto allo sfondo */
+  flex: 1 1 calc(33.333% - 2em);
+  /* Default: 3 card per riga */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+/* Schermi più grandi (PC) */
+@media (min-width: 1024px) {
+  .card {
+    flex: 1 1 calc(16.666% - 2em);
+    /* Fino a 6 card per riga */
+  }
+}
+
+/* Schermi medi (tablet) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    flex: 1 1 calc(25% - 2em);
+    /* Fino a 4 card per riga */
+  }
+}
+
+/* Schermi piccoli (mobile) */
+@media (max-width: 767px) {
+  .card {
+    flex: 1 1 calc(33.333% - 2em);
+    /* Fino a 3 card per riga */
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.no-padding {
+  padding: 0 !important;
+}

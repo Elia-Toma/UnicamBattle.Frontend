@@ -1,0 +1,17 @@
+{
+    "pages": {
+        "home": {
+            "title": "UnicamBattle",
+            "play": "Gioca"
+        },
+        "personaggi": {
+            "title": "Scegli un personaggio",
+            "buttons": {
+                "fight": "Combatti"
+            }
+        },
+        "duello": {
+            "title": "Duello"
+        }
+    }
+}
